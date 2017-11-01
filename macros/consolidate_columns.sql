@@ -28,9 +28,11 @@
 	{%- endcall -%}
 
 	{%- set new_columns = load_result('new_columns')['data'] | map(attribute=0)-%}
+	{{ log("NEW COLUMNS:", info=True) }}
+	{{ log(load_result('new_columns'), info=True) }}
 	{%- set existing_columns = load_result('existing_columns')['data'] | map(attribute=0)-%}
-
-
+	{{ log("EXISTING COLUMNS:", info=True) }}
+	{{ log(load_result('existing_columns'), info=True) }}
 	select
 
 	    {% for column in existing_columns | list -%}
