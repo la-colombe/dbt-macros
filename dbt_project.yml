@@ -33,3 +33,6 @@ models:
   my_new_package:
       example:
           materialized: view
+
+repositories:
+  - "git@github.com:fishtown-analytics/dbt-utils.git"
