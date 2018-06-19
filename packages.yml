@@ -1,0 +1,2 @@
+packages:
+  - git: "git@github.com:fishtown-analytics/dbt-utils.git"

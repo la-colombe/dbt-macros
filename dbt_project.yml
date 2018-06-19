@@ -30,9 +30,4 @@ clean-targets:         # directories to be removed by `dbt clean`
 # In this example config, we tell dbt to build all models in the example/ directory
 # as views (the default). Try changing `view` to `table` below, then re-running dbt
 models:
-  my_new_package:
-      example:
-          materialized: view
-
-repositories:
-  - "git@github.com:fishtown-analytics/dbt-utils.git"
+  materialized: view
