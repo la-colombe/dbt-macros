@@ -3,6 +3,7 @@
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
 name: 'dbt_macros'
+config-version: 2
 version: '1.0'
 
 # This setting configures which "profile" dbt uses for this project. Profiles contain
